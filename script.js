@@ -23,6 +23,9 @@ body.append(div);
 //extra opties zijn.
 div.innerText="hello world";
 div.textContent = "hello wereld 2"
+
+
+youtube link uitleg***https://youtu.be/adPc41k4EvE***
 */
 const spottedAnimalButtons = document.querySelectorAll('.big-five-button');
 const removeFirstAnimalButton = document.getElementById('remove-first-item-button');
@@ -31,10 +34,10 @@ const removeAllAnimalsButton = document.getElementById('remove-all-button');
 spottedAnimalButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const newSpottedAnimal = document.getElementById('spotted-animals-list');
-    const newLi = document.createElement('li');
-    newLi.className = 'spotted-animals-list-item';
-    newSpottedAnimal.appendChild(newLi);
-    newLi.innerText = button.innerHTML;
+    const addNewLi = document.createElement('li');
+    addNewLi.className = 'spotted-animals-list-item';
+    newSpottedAnimal.appendChild(addNewLi);
+    addNewLi.innerText = button.innerHTML;
   });
 });
 
